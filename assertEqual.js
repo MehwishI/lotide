@@ -12,6 +12,7 @@ const assertEqual = function (actual,expected){
 
 };
 
+
 assertEqual("Lighthouse labs","bootcamp");
 
 assertEqual(1,1);
