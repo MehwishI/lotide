@@ -1,40 +1,41 @@
-const assertEqual = function (actual,expected){
+// const assertEqual = function (actual,expected){
 
-  if(actual===expected)
-  {
-    //console.log(`Assertion Passed!, ${actual} === ${expected}`); 
-    return true;
-  }
-  else 
-  {
-    //console.log(`Assertion Failed!, ${actual} !== ${expected}`); 
-    return false;
-  }
+//   if(actual===expected)
+//   {
+//     //console.log(`Assertion Passed!, ${actual} === ${expected}`); 
+//     return true;
+//   }
+//   else 
+//   {
+//     //console.log(`Assertion Failed!, ${actual} !== ${expected}`); 
+//     return false;
+//   }
   
-};
-const eqArrays = function (arr1, arr2){
- if(arr1.length === arr2.length){
-  for( let i=0; i <arr1.length; i++){
+// };
+// const eqArrays = function (arr1, arr2){
+//  if(arr1.length === arr2.length){
+//   for( let i=0; i <arr1.length; i++){
 
-    if(assertEqual(arr1[i],arr2[i]) === false){
-      return false;
-    }
+//     if(assertEqual(arr1[i],arr2[i]) === false){
+//       return false;
+//     }
      
-  }
-  return true;
- }
-};
+//   }
+//   return true;
+//  }
+// };
 
-const assertArraysEqual = function (arr1,arr2){
+// const assertArraysEqual = function (arr1,arr2){
 
-  if(eqArrays(arr1,arr2)){
-    console.log(`The arrays, ${arr1} and ${arr2} are equal!`);
-  }
-  else {
-    console.log(`The arrays, ${arr1} and ${arr2} are not equal!`);
-  }
+//   if(eqArrays(arr1,arr2)){
+//     console.log(`The arrays, ${arr1} and ${arr2} are equal!`);
+//   }
+//   else {
+//     console.log(`The arrays, ${arr1} and ${arr2} are not equal!`);
+//   }
 
-}
+// }
+
 const middle = function (myarr){
 
   let newarr =[];
@@ -51,11 +52,5 @@ const middle = function (myarr){
   }
   return newarr;
 }
+module.exports = middle;
 
-console.log(middle([]));
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
-console.log(middle([1, 2, 3])); // => [2]
-console.log(middle([1, 2, 3, 4, 5])); // => [3]
-console.log(middle([1, 2, 3, 4])); // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
