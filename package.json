@@ -1,6 +1,6 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
+  "name": "@mehwiqb/lotide",
+  "version": "1.0.2",
   "description": "",
   "main": "assertArraysEqual.js",
   "directories": {
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/MehwishI/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name": "Mehwish Iqbal",
+    "email": "mehwishned21@gmail.com",
+    "url": "https://github.com/MehwishI"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MehwishI/lotide/issues"
