@@ -1,3 +1,4 @@
+//Returns tail from the array passed to this function
 const tail = function (arr) {
   let newarr = [];
   if (arr.length <= 1) {

@@ -3,7 +3,7 @@ const without = function (array, itemsToRemove) {
 
   for (let element of array) {
     if (!itemsToRemove.includes(element)) {
-      //includes uses === (matches type and value both)
+      //includes uses === operator (matches type and value both)
       newarr.push(element);
     }
   }
